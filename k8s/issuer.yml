@@ -8,4 +8,7 @@ spec:
     email: 'rakshithgajendra@gmail.com'
     privateKeySecretRef:
       name: letsencrypt-pod
-    http01: {}
+    solvers:
+      - http01: 
+          ingress:
+            class: nginx
